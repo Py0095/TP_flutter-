@@ -14,7 +14,7 @@ class GroupMember {
   });
 }
 
-// Ekran ki afiche detay sou yon sijè done
+// Ekran ki afiche detay  sou yon sijè done
 class DetailScreen extends StatelessWidget {
   final String title; // Tit ekran an
   final String detail; // Detay sijè a
@@ -72,7 +72,8 @@ class MemberDetailScreen extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => DetailScreen(
                     title: 'Academic Background', // Tit ekran detay la
-                    detail: member.academicBackground, // Detay fòmasyon akademik
+                    detail:
+                        member.academicBackground, // Detay fòmasyon akademik
                   ),
                 ),
               );
@@ -102,8 +103,9 @@ class GroupMembersScreen extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.all(8.0),
         child: GridView.builder(
-          shrinkWrap: true, // pou réduire la taille du GridView en fonction de son contenu
-          gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(
+          shrinkWrap:
+              true, // pou réduire la taille du GridView en fonction de son contenu
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2, // 2 kolòn nan grid la
             crossAxisSpacing: 8.0, // Espas ant kolòn yo
             mainAxisSpacing: 8.0, // Espas ant liy yo
@@ -123,7 +125,8 @@ class GroupMembersScreen extends StatelessWidget {
               child: Container(
                 height: 100, // Hauteur fixe pou chak kontènè
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.blueAccent), // Borè kontènè yo
+                  border:
+                      Border.all(color: Colors.blueAccent), // Borè kontènè yo
                   borderRadius: BorderRadius.circular(8.0), // Kourb kontènè yo
                 ),
                 child: Center(
@@ -171,7 +174,13 @@ class MyApp extends StatelessWidget {
           'Age: 23 ans \n Adresse: Clercine 22 imp cherubin \n Phone: +509 3846 0432',
       academicBackground: 'Bachelor\'s in Computer Science',
     ),
-     "Estinvil Clivens": GroupMember(
+    "Estinvil Clivens": GroupMember(
+      name: 'Estinvil Clivens',
+      personalInfo:
+          'Age: 23 ans \n Adresse: Clercine 22 imp cherubin \n Phone: +509 3846 0432',
+      academicBackground: 'Bachelor\'s in Computer Science',
+    ),
+    "Mathieu Blemy": GroupMember(
       name: 'Estinvil Clivens',
       personalInfo:
           'Age: 23 ans \n Adresse: Clercine 22 imp cherubin \n Phone: +509 3846 0432',
