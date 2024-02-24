@@ -47,6 +47,7 @@ class MemberDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(member.name),
+        
       ),
       body: ListView(
         children: [
@@ -99,6 +100,7 @@ class GroupMembersScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Group Members'), // Tit ekran an
+        
       ),
       body: Container(
         padding: EdgeInsets.all(8.0),
@@ -159,31 +161,36 @@ class MyApp extends StatelessWidget {
     "Aurelus Wisner": GroupMember(
       name: 'Aurelus Wisner',
       personalInfo:
-          'Age: 23 ans \n Adresse: Clercine 22 imp cherubin \n Phone: +509 3846 0432',
+          'Age: 23 ans \n Adresse: Nazon \n Phone: +509 3106 7061',
       academicBackground: 'Bachelor\'s in Computer Science',
     ),
     "Florestal Jean Daniel": GroupMember(
       name: 'Florestal Jean Daniel',
       personalInfo:
-          'Age: 23 ans \n Adresse: Clercine 22 imp cherubin \n Phone: +509 3846 0432',
+          'Age: 23 ans \n Adresse: Nazon \n Phone: +509 xxxx xxxx',
       academicBackground: 'Bachelor\'s in Computer Science',
     ),
     "Aishael Picard": GroupMember(
       name: 'Aishael Picard',
-      personalInfo:
-          'Age: 23 ans \n Adresse: Clercine 22 imp cherubin \n Phone: +509 3846 0432',
+      personalInfo:"Age: 22 ans,  \n Adresse: 2,Impasse Romain ,Juvénat, Pétion-Ville \n Phone: 41 24 95 52",
       academicBackground: 'Bachelor\'s in Computer Science',
     ),
     "Estinvil Clivens": GroupMember(
       name: 'Estinvil Clivens',
       personalInfo:
-          'Age: 23 ans \n Adresse: Clercine 22 imp cherubin \n Phone: +509 3846 0432',
+          'Age: 23 ans \n Adresse: Nazon \n Phone: +509 3165 8867',
       academicBackground: 'Bachelor\'s in Computer Science',
     ),
     "Mathieu Blemy": GroupMember(
-      name: 'Estinvil Clivens',
+      name: 'Mathieu Blemy',
       personalInfo:
           'Age: 23 ans \n Adresse: Clercine 22 imp cherubin \n Phone: +509 3846 0432',
+      academicBackground: 'Bachelor\'s in Computer Science',
+    ),
+    "Bastient Jean Ritchy": GroupMember(
+      name: 'Bastient Jean Ritchy',
+      personalInfo:
+          'Age: 23 ans \n Petion ville \n Phone: +509 4656 6186',
       academicBackground: 'Bachelor\'s in Computer Science',
     ),
   };
